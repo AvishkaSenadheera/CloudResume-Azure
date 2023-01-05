@@ -8,7 +8,7 @@ on:
 
 
 env:
-  AZURE_FUNCTIONAPP_NAME: 'httptriggerCounter'  # set this to your application's name httptriggerCounter
+  AZURE_FUNCTIONAPP_NAME: httptriggerCounter  # set this to your application's name httptriggerCounter
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'backend'    # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '6.0.404'              # set this to the dotnet version to use
 
@@ -17,7 +17,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: 'Checkout GitHub action'
-      uses: actions/checkout@v2
+      uses: actions/checkout@main #v2
 
     - name: 'Login via Azure CLI'
       uses: azure/login@v1
@@ -42,6 +42,7 @@ jobs:
         dotnet test
     - name: 'Run Azure Functions action'
       uses: Azure/functions-action@v1
+      id: fa
       with:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
         package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api/output'
