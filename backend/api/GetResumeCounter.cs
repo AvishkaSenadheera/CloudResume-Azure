@@ -32,7 +32,7 @@ namespace Company.Function
             ILogger log)
 
         {
-            // here is where the counter gets updated try 2
+            // here is where the counter gets updated try 3
             log.LogInformation("C# HTTP trigger function processed a request.");
 
             
