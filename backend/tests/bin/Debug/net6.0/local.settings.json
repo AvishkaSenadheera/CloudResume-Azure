@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AzureWebJobsSecretStorageType": "files",
+    "AzureResume2ConnectionString": "AccountEndpoint=https://avishka-backend-try2.documents.azure.com:443/;AccountKey=OgyAuwQnfJR1kRQDFR1tEVLiJfmnflMyzhHNIsM4zPZrQlYlFLviVvcgTLX1bmxUQgtvkiZMvhJwACDbOcuuCg==;"
+  },
+  "Host":
+  {
+    "CORS": "*"
+  }
+}
