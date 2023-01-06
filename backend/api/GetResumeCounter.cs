@@ -32,7 +32,7 @@ namespace Company.Function
             ILogger log)
 
         {
-            // here is where the counter gets updated try 10 with publish cred
+            // here is where the counter gets updated try 11 with publish cred
             log.LogInformation("C# HTTP trigger function processed a request.");
 
             
